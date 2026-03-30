@@ -7,19 +7,21 @@ Quick Sort is a divide-and-conquer, comparison-based sorting algorithm. It selec
 
 ## Algorithm: Partition 
 
+```text
 Partition(arr[low..high])
 //Output: index p where pivot is placed, arr partitioned around pivot
 
 pivot ← arr[high]
 i ← low − 1
 FOR j ← low TO high − 1 DO
-&nbsp;&nbsp;&nbsp;&nbsp;IF arr[j] ≤ pivot THEN
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i ← i + 1
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Swap arr[i] and arr[j]
-&nbsp;&nbsp;&nbsp;&nbsp;END IF
+	IF arr[j] ≤ pivot THEN
+		i ← i + 1
+		Swap arr[i] and arr[j]
+	END IF
 END FOR
 Swap arr[i + 1] and arr[high]
 Return i + 1
+```
 
 ---
 
@@ -28,13 +30,15 @@ Return i + 1
 QuickSort(arr[0..n-1], low, high)
 //Output: arr[] sorted in non-decreasing order
 
+```text
 IF low < high THEN
-&nbsp;&nbsp;&nbsp;&nbsp;p ← Partition(arr, low, high)
-&nbsp;&nbsp;&nbsp;&nbsp;QuickSort(arr, low, p − 1)
-&nbsp;&nbsp;&nbsp;&nbsp;QuickSort(arr, p + 1, high)
+	p ← Partition(arr, low, high)
+	QuickSort(arr, low, p − 1)
+	QuickSort(arr, p + 1, high)
 END IF
 
 Return arr[]
+```
 
 ---
 

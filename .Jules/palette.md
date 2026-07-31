@@ -1,0 +1,3 @@
+## 2025-07-31 - Command-Driven README as a Developer Experience (DX) Interface
+**Learning:** For command-line and terminal-centric repositories (such as C++ algorithm catalogs), the README acts as the primary user interface. Designing a structured, consistent, and command-focused README with a quick algorithm comparison matrix dramatically improves both learner comprehension and micro-developer experience (DX). Highlighting exact, copy-pasteable optimal compiler flags (`-O3`) alongside markdown deep links satisfies accessibility and navigational speed.
+**Action:** Always provide interactive tabular overviews and explicit execution pathways when optimizing documentation for terminal-based repositories.
